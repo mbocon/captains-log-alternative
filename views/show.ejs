@@ -1,0 +1,10 @@
+<h1><%=log.title %> </h1>
+<h3><%log.entry%> </h3>
+<%if(log.shipIsBroken){ %>
+    <h3>The ship is broken</h3>
+    <% }else{%> 
+        <h3>The ship is not broken</h3>
+    <% } %> 
+<br>
+<br>
+<a href="/logs/"><button>back to index</button></a>

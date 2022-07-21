@@ -1,0 +1,7 @@
+<ul>
+    <% logs.forEach((log)=>{%>
+        <li><a href="/logs/<%=log._id%>"><%=log.title%></a><a href="/logs/<%=log._id%>/edit"><button>EDIT</button></a><form action="/logs/<%=log._id%>?_method=DELETE" method="post"><button type="submit">DELETE</button></form></li>
+
+    <%}) %> 
+    <li><a href="/logs/new">Create new Captian's log</a></li>
+</ul>
